@@ -18,7 +18,7 @@ export const Login = () => {
       <form onSubmit={onLogin}>
         <div>
           <label>Email</label>
-          <input type="email" ref={emailRef} defaultValue="u2@u2.com" />
+          <input type="email" ref={emailRef} defaultValue="u2@gmail.com" />
         </div>
         <div>
           <label>Password</label>
