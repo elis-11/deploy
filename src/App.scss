@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 1rem;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+}
+header {
+  height: 20vh;
+}
+
+main {
+  height: 80vh;
+  padding: 0 10vw;
+}
+
+.login {
+
+  width: 200px;
+  margin: auto;
+
+  form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.error {
+  width: 100%;
+  padding: 10px;
+  color: red;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.dashboard {
+
+  width: 400px;
+  margin: 0 auto;
+
+  .book {
+    width: 300px;
+    border-radius: 20px;
+    background-color: #555;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    margin: 10px auto;
+
+    .author {
+      font-size: 0.8em;
+      font-style: italic;
+    }
+  }
+}

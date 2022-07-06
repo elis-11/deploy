@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import { useDataContext } from "./contexts/DataProvider";
 import { Navbar } from "./components/Navbar";
 import {Login} from "./components/Login";

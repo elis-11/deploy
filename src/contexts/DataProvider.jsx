@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { checkAuthStatusApi, loginApi, logoutApi } from "../helpers/apiCalls";
+import { useNavigate } from "react-router-dom";
 
 const DataContext = createContext();
 
@@ -21,6 +21,7 @@ const DataProvider = ({ children }) => {
       if (!user && !result.error) setUser(result);
     };
     checkAuthStatus();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const login = async (email, password, redirectRoute = "/dashboard") => {

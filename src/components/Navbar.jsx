@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useDataContext } from "../contexts/DataProvider";
+import '../App.scss';
 
 export const Navbar = () => {
   const { user, logout } = useDataContext();
