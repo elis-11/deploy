@@ -17,12 +17,12 @@ const DataProvider = ({ children }) => {
 
   useEffect(() => {
     const checkAuthStatus = async () => {
-      const result = await checkAuthStatusApi();
-      if (!user && !result.error) setUser(result);
-    };
-    checkAuthStatus();
+      const result = await checkAuthStatusApi()
+      if (!user && !result.error) setUser(result)
+    }
+    checkAuthStatus()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [])
 
   const login = async (email, password, redirectRoute = "/dashboard") => {
     if (!email || !password)
